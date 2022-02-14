@@ -111,7 +111,7 @@ Promise.all([
   obtainInstruction("brusselsSprouts", 6),
 ])
   .then((response) => {
-    response.forEach(step => {
+    response.forEach((step) => {
       document.querySelector("#brusselsSprouts").innerHTML += `<li>${step}</li>`;  
     })
     response.push( document.querySelector("#brusselsSprouts").innerHTML += `<li>${`Brussel sprouts are ready!`}</li>`)
